@@ -11,6 +11,12 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+We use a rebase-oriented workflow. We do not use merge commits. This means to get your local branch up-to-date with the upstream, you would use
+
+```git pull --rebase upstream main```
+
+instead of regular `git pull`.
+
 ### Commit messages
 
 Please adhere to the [Conventional Commits](https://conventionalcommits.org) spec when writing your commit messages. This ensures ease of understanding for all those who work on the project, as well as a nice looking commit history. 
@@ -23,4 +29,4 @@ If you're using VSCode, the [Conventional Commits extension]( https://marketplac
 
 ## License
 
-This project is licensed under [GPL-3](https://choosealicense.com/licenses/gpl-3.0/)
+This project is licensed under [GPL-3](https://choosealicense.com/licenses/gpl-3.0/).

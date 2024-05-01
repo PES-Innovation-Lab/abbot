@@ -1,0 +1,17 @@
+[package]
+name = "abbot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serenity = "0.12"
+tokio = { version = "1.21.2", features = ["macros", "rt-multi-thread"] }
+axum = { version = "0.7.5" }
+futures = { version = "0.3.30" }
+prometheus = { version = "0.9", features = ["process"] }
+lazy_static = "1.4"
+mongodb = "2.8.2"
+bson = { version = "2.8", features = ["chrono-0_4"] } # Needed for using chrono datetime in doc
+chrono = "0.4" # Used for setting DateTimes
+serde = "1" # Used in the Map Data into Structs section
+figment = { version = "0.10", features = ["yaml", "env"] }
